@@ -31,7 +31,9 @@
     },
     methods: {
       save: function(){
-        alert('保存されました');
+        this.$store.commit("save", {
+          body: this.memoBody
+        });
         this.$router.push("/");
       }
     }
