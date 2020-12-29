@@ -2,8 +2,17 @@
   <div class="editor">
     <textarea name="memo" v-model="memoBody"></textarea>
     <button @click="save">保存</button> 
+    <button class="remove" @click="remove">削除</button>
   </div>
 </template>
+
+<style scoped>
+  .remove {
+    background-color: transparent; 
+    color: #f33;
+    border: none;
+  } 
+</style>
 
 <script>
   export default {
@@ -31,6 +40,10 @@
           body: this.memoBody
       });
       this.$router.push("/");
+      },
+      remove: function(){
+        this.$store.commit("remove", this.$route.params["id"]);
+        this.$router.push("/");
       }
     } 
   };
