@@ -9,6 +9,7 @@
       </li>
     </ul> 
   </div>
+
 </template>
 
 <script>
@@ -54,4 +55,7 @@
     text-align: left;
     margin-bottom: 5px;
   }
+  .vue-typer .custom.char{
+  color: aliceblue;
+ }
 </style>
