@@ -1,60 +1,88 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+    <div id="app">
+      <div id="nav">
+        <v-tabs>
+          <v-tab to="/">Home</v-tab>
+          <!-- <v-tab to="/new">new</v-tab>
+          <v-tab to="/edit">edit</v-tab> -->
+        </v-tabs>
       </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+      <div v-cloak>
+        <transition name="fade" mode="out-in">
+          <div v-if="center" key="center">
+            <div v-on:click="watchLeft">左の画面にいく</div>
+            <div v-on:click="watchRight">右の画面にいく</div>
+          </div>
+             
+          <div v-if="left" key="left">
+            <p>左の画面</p>
+            <div v-on:click="watchCenter">最初の画面に戻る</div>
+            <div v-on:click="watchRight">右の画面にいく</div>
+          </div>
+             
+          <div v-if="right" key="right">
+            <p>右の画面</p>
+            <div v-on:click="watchCenter">最初の画面に戻る</div>
+            <div v-on:click="watchLeft">左の画面にいく</div>
+          </div>
+        </transition>
+      </div>
+    </div>
   </v-app>
 </template>
 
+<style lang="scss">
+div.click{
+  cursor: pointer;
+}
+ 
+[v-cloak] {
+  display: none;
+}
+ 
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+ 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
-import HelloWorld from './components/HelloWorld';
-
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
+  export default({
+    el: "#app",
+    data() {
+      return {
+        center: true,
+        left: false,
+        right: false,
+      };
+    },
+    methods: {
+      watchCenter: function () {
+        this.center = true;
+        this.left = false;
+        this.right = false;
+      },
+      watchLeft: function () {
+        this.center = false;
+        this.left = true;
+        this.right = false;
+      },
+      watchRight: function () {
+        this.center = false;
+        this.left = false;
+        this.right = true;
+      },
+    }
+  });
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Header>home</Header>
+    ようおゆ
   </div>
 
 </template>
