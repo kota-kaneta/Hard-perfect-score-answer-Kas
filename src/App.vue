@@ -4,27 +4,28 @@
       <div id="nav">
         <v-tabs>
           <v-tab to="/">Home</v-tab>
-          <!-- <v-tab to="/new">new</v-tab>
+          <!-- <v-tab to="/hard">hard</v-tab>
           <v-tab to="/edit">edit</v-tab> -->
         </v-tabs>
       </div>
       <div v-cloak>
         <transition name="fade" mode="out-in">
-          <div v-if="center" key="center">
-            <div v-on:click="watchLeft">左の画面にいく</div>
-            <div v-on:click="watchRight">右の画面にいく</div>
+          <div v-if="home" key="home">
+            home
+            <div v-on:click="watchhard">hardへ</div>
+            <div v-on:click="watchPerfect">perfectへ</div>
           </div>
              
-          <div v-if="left" key="left">
-            <p>左の画面</p>
-            <div v-on:click="watchCenter">最初の画面に戻る</div>
-            <div v-on:click="watchRight">右の画面にいく</div>
+          <div v-if="hard" key="hard">
+            hard
+            <div v-on:click="watchHome">homeへ</div>
+            <div v-on:click="watchPerfect">perfectへ</div>
           </div>
              
-          <div v-if="right" key="right">
-            <p>右の画面</p>
-            <div v-on:click="watchCenter">最初の画面に戻る</div>
-            <div v-on:click="watchLeft">左の画面にいく</div>
+          <div v-if="perfect" key="perfect">
+            perfect
+            <div v-on:click="watchHome">homeへ</div>
+            <div v-on:click="watchhard">hardへ</div>
           </div>
         </transition>
       </div>
@@ -62,26 +63,26 @@ div.click{
     el: "#app",
     data() {
       return {
-        center: true,
-        left: false,
-        right: false,
+        home: true,
+        hard: false,
+        perfect: false,
       };
     },
     methods: {
-      watchCenter: function () {
-        this.center = true;
-        this.left = false;
-        this.right = false;
+      watchHome: function () {
+        this.home = true;
+        this.hard = false;
+        this.perfect = false;
       },
-      watchLeft: function () {
-        this.center = false;
-        this.left = true;
-        this.right = false;
+      watchhard: function () {
+        this.home = false;
+        this.hard = true;
+        this.perfect = false;
       },
-      watchRight: function () {
-        this.center = false;
-        this.left = false;
-        this.right = true;
+      watchPerfect: function () {
+        this.home = false;
+        this.hard = false;
+        this.perfect = true;
       },
     }
   });

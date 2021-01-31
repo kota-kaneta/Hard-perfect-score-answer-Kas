@@ -11,9 +11,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/new',
-    name: 'New',
-    component: () => import('../views/New.vue')
+    path: '/hard',
+    name: 'Hard',
+    component: () => import('../views/Hard.vue')
   },
   {
     path: '/edit/:id',

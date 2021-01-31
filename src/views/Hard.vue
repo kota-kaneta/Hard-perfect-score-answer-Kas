@@ -1,13 +1,13 @@
 <template>
-  <div class="new">
-    <Header>new</Header>
+  <div class="hard">
+    <Header>hard</Header>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue"
 export default {
-  name: "new",
+  name: "hard",
   components: {
     Header
   }
