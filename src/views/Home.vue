@@ -1,13 +1,6 @@
 <template>
   <div class="home">
-    <Header>My memos</Header>
-    <ul>
-      <li v-for="memo in newest" :key="memo.id">
-        <router-link :to="{name: 'Edit', params: {id: memo.id}}">
-          {{ memo.body }}
-        </router-link>
-      </li>
-    </ul> 
+    <Header>home</Header>
   </div>
 
 </template>
