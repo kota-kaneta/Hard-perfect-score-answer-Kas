@@ -9,9 +9,11 @@ Vue.use(VueScrollTo)
 Vue.config.productionTip = false
 
 import { gsap } from "gsap";
-import { PixiPlugin } from "gsap/PixiPlugin.js";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
-gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+if (process.client) {
+  gsap.registerPlugin(ScrollTrigger)
+}
 
 new Vue({
   router,
