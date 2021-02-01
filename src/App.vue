@@ -35,7 +35,8 @@
 
 <style lang="scss">
 #nav{
-  display: flex;
+  position: fixed;
+  right: 0;
 }
 a{
   text-decoration-line: none;
