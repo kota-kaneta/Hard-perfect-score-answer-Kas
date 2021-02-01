@@ -2,10 +2,12 @@
   <v-app>
     <div id="app">
       <div id="nav">
-        <button v-scroll-to="'#home'">home</button>
-        <button v-scroll-to="'#home2'">home2</button>
-        <button v-scroll-to="'#home3'">home3</button>
-        <button v-scroll-to="'#home4'">home4</button>
+        <v-tabs>
+          <v-tab v-scroll-to="'#home'">home</v-tab>
+          <v-tab v-scroll-to="'#home2'">home2</v-tab>
+          <v-tab v-scroll-to="'#home3'">home3</v-tab>
+          <v-tab v-scroll-to="'#home4'">home4</v-tab>
+        </v-tabs>
       </div>
       <div id="home">
         <h2 id="home">
