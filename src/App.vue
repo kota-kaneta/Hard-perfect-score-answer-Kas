@@ -3,57 +3,39 @@
     <div id="app">
       <div id="nav">
         <v-tabs>
-          <v-tab to="/">Home</v-tab>
-          <!-- <v-tab to="/hard">hard</v-tab>
-          <v-tab to="/edit">edit</v-tab> -->
+          <v-tab><a href="#home4">home</a></v-tab>
         </v-tabs>
       </div>
-      <div v-cloak>
-        <transition name="fade" mode="out-in">
-          <div v-if="home" key="home">
-            home
-            <div v-on:click="watchhard">hardへ</div>
-            <div v-on:click="watchPerfect">perfectへ</div>
-          </div>
-             
-          <div v-if="hard" key="hard">
-            hard
-            <div v-on:click="watchHome">homeへ</div>
-            <div v-on:click="watchPerfect">perfectへ</div>
-          </div>
-             
-          <div v-if="perfect" key="perfect">
-            perfect
-            <div v-on:click="watchHome">homeへ</div>
-            <div v-on:click="watchhard">hardへ</div>
-          </div>
-        </transition>
+      <div id="home">
+        <a id="home">
+          homeです
+        </a>
+      </div>
+      <div id="home2">
+        <a id="home2">
+          home2です
+        </a>
+      </div>
+      <div id="home3">
+        <a id="home3">
+          home3です
+        </a>
+      </div>
+      <div id="home4">
+        <a id="home4">
+          home4です
+        </a>
       </div>
     </div>
   </v-app>
 </template>
 
 <style lang="scss">
-div.click{
-  cursor: pointer;
+a{
+  text-decoration-line: none;
 }
- 
-[v-cloak] {
-  display: none;
-}
- 
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
- 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter-to,
-.fade-leave {
-  opacity: 1;
+#home,#home2,#home3,#home4{
+  height: 500px;
 }
 </style>
 
