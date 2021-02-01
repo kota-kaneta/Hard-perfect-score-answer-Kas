@@ -2,35 +2,39 @@
   <v-app>
     <div id="app">
       <div id="nav">
-        <v-tabs>
-          <v-tab><a href="#home4">home</a></v-tab>
-        </v-tabs>
+        <button v-scroll-to="'#home'">home</button>
+        <button v-scroll-to="'#home2'">home2</button>
+        <button v-scroll-to="'#home3'">home3</button>
+        <button v-scroll-to="'#home4'">home4</button>
       </div>
       <div id="home">
-        <a id="home">
+        <h2 id="home">
           homeです
-        </a>
+        </h2>
       </div>
       <div id="home2">
-        <a id="home2">
+        <h2 id="home2">
           home2です
-        </a>
+        </h2>
       </div>
       <div id="home3">
-        <a id="home3">
+        <h2 id="home3">
           home3です
-        </a>
+        </h2>
       </div>
       <div id="home4">
-        <a id="home4">
+        <h2 id="home4">
           home4です
-        </a>
+        </h2>
       </div>
     </div>
   </v-app>
 </template>
 
 <style lang="scss">
+#nav{
+  display: flex;
+}
 a{
   text-decoration-line: none;
 }
