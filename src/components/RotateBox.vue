@@ -19,7 +19,6 @@ export default {
   },
   mounted() {
     const $canvas = document.getElementById("canvas");
-    // canvasを後付けで設定する方法あったら教えてほしいー
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
       canvas: $canvas

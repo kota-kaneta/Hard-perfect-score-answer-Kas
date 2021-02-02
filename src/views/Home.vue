@@ -1,35 +1,33 @@
 <template>
-  <div class="home">
+  <div class="cube">
     <div id="nav">
       <div class="left-nav">
         <v-tabs>
-          <v-tab to="/">Home</v-tab>
+          <v-tab to="/">cube</v-tab>
           <v-tab to="/hard">Hard</v-tab>
           <v-tab to="/edit">Edit</v-tab>
         </v-tabs>
       </div>
       <div class="right-nav">
-        <v-tabs>
-          <v-tab v-scroll-to="'#top'">home</v-tab>
-          <v-tab v-scroll-to="'#h2'">home2</v-tab>
-          <v-tab v-scroll-to="'#h3'">home3</v-tab>
-          <v-tab v-scroll-to="'#h4'">home4</v-tab>
-        </v-tabs>
+        <v-btn dark color="cyan" v-scroll-to="'#top'">cube1</v-btn>
+        <v-btn dark color="cyan" v-scroll-to="'#h2'">cube2</v-btn>
+        <v-btn dark color="cyan" v-scroll-to="'#h3'">cube3</v-btn>
+        <v-btn dark color="cyan" v-scroll-to="'#h4'">cube4</v-btn>
       </div>
     </div>
-    <Header id="top">Home</Header>
-    <h2>home</h2>
-      <div id="home">
-      </div>
-    <h2 id="h2">home2</h2>
-      <div id="home2">
+    <Header id="top">Cube</Header>
+    <h2>cube1</h2>
+      <div id="cube">
         <rotate-box></rotate-box>
       </div>
-    <h2 id="h3">home3</h2>
-      <div id="home3">
+    <h2 id="h2">cube2</h2>
+      <div id="cube2">
       </div>
-    <h2 id="h4">home4</h2>
-      <div id="home4">
+    <h2 id="h3">cube3</h2>
+      <div id="cube3">
+      </div>
+    <h2 id="h4">cube4</h2>
+      <div id="cube4">
       </div>
   </div>
 </template>
@@ -43,7 +41,7 @@
   position: fixed;
   right: 0;
 }
-#home,#home2,#home3,#home4{
+#cube,#cube2,#cube3,#cube4{
   height: 500px;
   display: flex;
   justify-content: center;
@@ -52,7 +50,7 @@ h2{
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 100px;
+  padding: 65px;
 }
 </style>
 
@@ -61,7 +59,7 @@ import Header from "@/components/Header.vue"
 import RotateBox from "@/components/RotateBox.vue";
 
 export default {
-    name: "home",
+    name: "cube",
     components: {
       Header,
       RotateBox
