@@ -17,7 +17,7 @@
         </v-tabs>
       </div>
     </div>
-    <Header id="top">hard</Header>
+    <Header id="top">Hard</Header>
       <div id="hard">
         <h2>
           hard

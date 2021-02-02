@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div id="nav">
+      <rotate-box></rotate-box>
       <div class="left-nav">
         <v-tabs>
           <v-tab to="/">Home</v-tab>
@@ -57,10 +58,13 @@
 
 <script>
 import Header from "@/components/Header.vue"
+import RotateBox from "@/components/RotateBox.vue";
+
 export default {
     name: "home",
     components: {
-      Header
+      Header,
+      RotateBox
     }
   }
 </script>

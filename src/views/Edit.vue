@@ -17,7 +17,7 @@
         </v-tabs>
       </div>
     </div>
-    <Header id="top">edit</Header>
+    <Header id="top">Edit</Header>
       <div id="edit">
         <h2>
           edit
