@@ -1,6 +1,13 @@
 <template>
   <v-app>
     <div id="app">
+      <div class="left-nav">
+        <v-tabs>
+          <v-tab to="/">Cube</v-tab>
+          <v-tab to="/hard">Hard</v-tab>
+          <v-tab to="/edit">Edit</v-tab>
+        </v-tabs>
+      </div>
       <router-view />
     </div>
   </v-app>
@@ -12,6 +19,9 @@
 }
 a{
   text-decoration-line: none;
+}
+.left-nav{
+  position: fixed;
 }
 </style>
 

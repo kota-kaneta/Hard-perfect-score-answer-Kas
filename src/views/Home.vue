@@ -1,20 +1,11 @@
 <template>
   <div class="cube">
-    <div id="nav">
-      <div class="left-nav">
-        <v-tabs>
-          <v-tab to="/">cube</v-tab>
-          <v-tab to="/hard">Hard</v-tab>
-          <v-tab to="/edit">Edit</v-tab>
-        </v-tabs>
-      </div>
       <div class="right-nav">
         <v-btn dark color="cyan" v-scroll-to="'#top'">cube1</v-btn>
         <v-btn dark color="cyan" v-scroll-to="'#h2'">cube2</v-btn>
         <v-btn dark color="cyan" v-scroll-to="'#h3'">cube3</v-btn>
         <v-btn dark color="cyan" v-scroll-to="'#h4'">cube4</v-btn>
       </div>
-    </div>
     <Header id="top">Cube</Header>
     <h2>cube1</h2>
       <div id="cube">
@@ -33,10 +24,6 @@
 </template>
 
 <style>
-#nav{
-  position: fixed;
-  display: flex;
-}
 .right-nav{
   position: fixed;
   right: 0;

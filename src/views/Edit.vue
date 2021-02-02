@@ -3,7 +3,7 @@
     <div id="nav">
       <div class="left-nav">
         <v-tabs>
-          <v-tab to="/">Home</v-tab>
+          <v-tab to="/"> Cube</v-tab>
           <v-tab to="/hard">Hard</v-tab>
           <v-tab to="/edit">Edit</v-tab>
         </v-tabs>
