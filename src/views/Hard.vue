@@ -1,13 +1,5 @@
 <template>
   <div class="hard">
-    <div id="nav">
-      <div class="left-nav">
-        <v-tabs>
-          <v-tab to="/">Cube</v-tab>
-          <v-tab to="/hard">Hard</v-tab>
-          <v-tab to="/edit">Edit</v-tab>
-        </v-tabs>
-      </div>
       <div class="right-nav">
         <v-tabs>
           <v-tab v-scroll-to="'#top'">hard</v-tab>
@@ -16,7 +8,6 @@
           <v-tab v-scroll-to="'#hard4'">hard4</v-tab>
         </v-tabs>
       </div>
-    </div>
     <Header id="top">Hard</Header>
       <div id="hard">
         <h2>
@@ -42,14 +33,6 @@
 </template>
 
 <style>
-#nav{
-  position: fixed;
-  display: flex;
-}
-.right-nav{
-  position: fixed;
-   right: 0;
-}
 #hard,#hard2,#hard3,#hard4{
   height: 500px;
 }
