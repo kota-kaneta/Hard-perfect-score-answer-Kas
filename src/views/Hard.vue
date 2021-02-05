@@ -2,7 +2,7 @@
   <div class="hard">
       <div class="right-nav">
         <v-tabs>
-          <v-tab v-scroll-to="'#top'">hard</v-tab>
+          <v-tab v-scroll-to="'#top'">hard1</v-tab>
           <v-tab v-scroll-to="'#hard2'">hard2</v-tab>
           <v-tab v-scroll-to="'#hard3'">hard3</v-tab>
           <v-tab v-scroll-to="'#hard4'">hard4</v-tab>
@@ -10,9 +10,7 @@
       </div>
     <Header id="top">Hard</Header>
       <div id="hard">
-        <h2>
-          hard
-        </h2>
+        <h2>hard1</h2>
       </div>
       <div id="hard2">
         <h2>

@@ -13,12 +13,15 @@
       </div>
     <h2 id="h2">cube2</h2>
       <div id="cube2">
+        <v-btn color="red" class="cube2-btn" @click="cube2==true">click!!</v-btn>
       </div>
     <h2 id="h3">cube3</h2>
       <div id="cube3">
+        <v-btn color="green" class="cube3-btn" @click="cube3==true">click!!!!</v-btn>
       </div>
     <h2 id="h4">cube4</h2>
       <div id="cube4">
+        <v-btn color="blue" class="cube4-btn" @click="cube4==true">click!!!!!</v-btn>
       </div>
   </div>
 </template>
@@ -38,6 +41,8 @@ h2{
   justify-content: center;
   align-content: center;
   padding: 65px;
+}
+.cube2-btn{
 }
 </style>
 

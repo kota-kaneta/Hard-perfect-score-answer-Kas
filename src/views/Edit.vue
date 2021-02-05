@@ -2,7 +2,7 @@
   <div class="edit">
       <div class="right-nav">
         <v-tabs>
-          <v-tab v-scroll-to="'#top'">edit</v-tab>
+          <v-tab v-scroll-to="'#top'">edit1</v-tab>
           <v-tab v-scroll-to="'#edit2'">edit2</v-tab>
           <v-tab v-scroll-to="'#edit3'">edit3</v-tab>
           <v-tab v-scroll-to="'#edit4'">edit4</v-tab>
