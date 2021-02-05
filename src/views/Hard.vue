@@ -8,32 +8,11 @@
           <v-tab v-scroll-to="'#hard4'">hard4</v-tab>
         </v-tabs>
       </div>
-    <Header id="top">Hard</Header>
-      <div id="hard">
-        <h2>hard1</h2>
-      </div>
-      <div id="hard2">
-        <h2>
-          hard2
-        </h2>
-      </div>
-      <div id="hard3">
-        <h2>
-          hard3
-        </h2>
-      </div>
-      <div id="hard4">
-        <h2>
-          hard4
-        </h2>
-      </div>
+    <Header id="top">JavaScript①</Header>
   </div>
 </template>
 
 <style>
-#hard,#hard2,#hard3,#hard4{
-  height: 500px;
-}
 </style>
 
 <script>
