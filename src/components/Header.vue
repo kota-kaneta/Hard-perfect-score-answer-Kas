@@ -1,14 +1,23 @@
 <template>
     <header>
-        <h1><slot></slot></h1>
+      <v-card color="basil">
+        <v-card-title class="text-center justify-center py-6">
+          <h1><slot></slot></h1>
+        </v-card-title>
+          <v-tabs vertical>
+            <v-tab v-scroll-to="'#top'">#1</v-tab>
+            <v-tab v-scroll-to="'#h2'">#2</v-tab>
+            <v-tab v-scroll-to="'#h3'">#3</v-tab>
+            <v-tab v-scroll-to="'#h4'">#4</v-tab>
+        </v-tabs>
+      </v-card>
     </header>
 </template>
 
 <style scoped>
 header{
-  display: flex;
-  justify-content: center;
-  padding: 80px 0;
+  position: fixed;
+  right: 0;
 }
 </style>
 

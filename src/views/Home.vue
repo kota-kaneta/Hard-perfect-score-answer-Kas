@@ -1,11 +1,5 @@
 <template>
   <div class="cube">
-      <div class="right-nav">
-        <v-btn dark color="cyan" v-scroll-to="'#top'">cube1</v-btn>
-        <v-btn dark color="cyan" v-scroll-to="'#h2'">cube2</v-btn>
-        <v-btn dark color="cyan" v-scroll-to="'#h3'">cube3</v-btn>
-        <v-btn dark color="cyan" v-scroll-to="'#h4'">cube4</v-btn>
-      </div>
     <Header id="top">Cube</Header>
     <h2>cube1</h2>
       <div id="cube">

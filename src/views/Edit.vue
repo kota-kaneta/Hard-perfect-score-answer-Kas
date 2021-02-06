@@ -1,39 +1,31 @@
 <template>
   <div class="edit">
-      <div class="right-nav">
-        <v-tabs>
-          <v-tab v-scroll-to="'#top'">edit1</v-tab>
-          <v-tab v-scroll-to="'#edit2'">edit2</v-tab>
-          <v-tab v-scroll-to="'#edit3'">edit3</v-tab>
-          <v-tab v-scroll-to="'#edit4'">edit4</v-tab>
-        </v-tabs>
-      </div>
     <Header id="top">Edit</Header>
-      <div id="edit">
+      <div id="h1">
         <h2>
-          edit
+          h1
         </h2>
       </div>
-      <div id="edit2">
+      <div id="h2">
         <h2>
-          edit2
+          h2
         </h2>
       </div>
-      <div id="edit3">
+      <div id="h3">
         <h2>
-          edit3
+          h3
         </h2>
       </div>
-      <div id="edit4">
+      <div id="h4">
         <h2>
-          edit4
+          h4
         </h2>
       </div>
   </div>
 </template>
 
 <style>
-#edit,#edit2,#edit3,#edit4{
+#h,#h2,#h3,#h4{
   height: 500px;
 }
 </style>
