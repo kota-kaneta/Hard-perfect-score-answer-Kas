@@ -1,5 +1,5 @@
 <template>
-  <div class="JavaScript">
+  <div id="hard">
   </div>
 </template>
 
