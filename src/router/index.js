@@ -11,9 +11,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/hard',
-    name: 'Hard',
-    component: () => import('../views/Hard.vue')
+    path: '/JavaScript',
+    name: 'JavaScript',
+    component: () => import('../views/JavaScript.vue')
   },
   {
     path: '/edit',

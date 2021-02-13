@@ -1,5 +1,6 @@
 <template>
-  <div id="hard">
+  <div id="JavaScript">
+    
   </div>
 </template>
 
@@ -8,7 +9,7 @@
 
 <script>
 export default {
-    name: "hard",
+    name: "JavaScript",
     components: {
     }
   }
