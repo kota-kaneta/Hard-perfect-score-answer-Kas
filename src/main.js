@@ -8,12 +8,12 @@ Vue.use(VueScrollTo)
 
 Vue.config.productionTip = false
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-if (process.client) {
-  gsap.registerPlugin(ScrollTrigger)
-}
+// if (process.client) {
+//   gsap.registerPlugin(ScrollTrigger)
+// }
 
 new Vue({
   router,
