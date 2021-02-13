@@ -7,7 +7,7 @@
       </div>
     <h2 id="h2">cube2</h2>
       <div id="cube2">
-        <v-btn color="red" class="cube2-btn" @click="cube2==true">click!!</v-btn>
+        <v-btn color="red" class="cube2-btn" @click="cube2==true" v-show="cube2==false">click!!</v-btn>
       </div>
       <div v-show="cube2==true">
         <div class="cube2-after">
