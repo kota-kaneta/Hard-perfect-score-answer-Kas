@@ -9,6 +9,12 @@
       <div id="cube2">
         <v-btn color="red" class="cube2-btn" @click="cube2==true">click!!</v-btn>
       </div>
+      <div v-show="cube2==true">
+        <div class="cube2-after">
+          kataino
+        </div>
+        <v-btn color="red" class="cube2-btn" @click="cube2==false">close</v-btn>
+      </div>
     <h2 id="h3">cube3</h2>
       <div id="cube3">
       </div>
@@ -47,6 +53,9 @@ export default {
     components: {
       Header,
       RotateBox
+    },
+    data: {
+      cube2: false
     }
   }
 </script>
