@@ -3,7 +3,7 @@
     <Header id="top">JavaScript</Header>
     <h2>#1-1</h2>
       <div class="random">
-        {{random}}
+        {{random}} + {{random2}}<br>= {{random+random2}}<i class="fas fa-ethernet"></i>
       </div>
     <h2 id="h2">JavaScript2</h2>
       <div id="JavaScript2">
@@ -23,7 +23,7 @@
   justify-content: center;
 }
 .random{
-  font-size: 100px;
+  font-size: 45px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -39,7 +39,8 @@ export default {
     },
     data: function(){
       return{
-        random: Math.random()
+        random: 60+Math.random(),
+        random2: 6+Math.random()
       }
     }
   }
