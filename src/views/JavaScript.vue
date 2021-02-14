@@ -3,7 +3,7 @@
     <Header id="top">JavaScript</Header>
     <h2>#1-1</h2>
       <div class="random">
-        {{random}} + {{random2}}<br>= {{random+random2}}<i class="fas fa-ethernet"></i>
+        {{random}} + {{random2}}<br>= {{random+random2}}
       </div>
     <h2 id="h2">JavaScript2</h2>
       <div id="JavaScript2">
