@@ -33,15 +33,15 @@
 <script>
 import Header from "@/components/Header.vue"
 export default {
-    name: "JavaScript",
-    components: {
-      Header
-    },
-    data: function(){
-      return{
-        random: 60+Math.random(),
-        random2: 6+Math.random()
-      }
+  name: "JavaScript",
+  components: {
+    Header
+  },
+  data: function(){
+    return{
+      random: 60+Math.random(),
+      random2: 6+Math.random()
     }
   }
+}
 </script>
