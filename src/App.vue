@@ -4,7 +4,7 @@
       <div class="left-nav">
         <v-tabs>
           <v-tab to="/">Cube</v-tab>
-          <v-tab to="/hard">Hard</v-tab>
+          <v-tab to="/JavaScript">JavaScript</v-tab>
           <v-tab to="/edit">Edit</v-tab>
         </v-tabs>
       </div>
