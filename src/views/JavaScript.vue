@@ -1,9 +1,9 @@
 <template>
   <div id="JavaScript">
     <Header id="top">JavaScript</Header>
-    <h2>#1-1</h2>
+    <h2>#1:セキ</h2>
       <div class="random">
-        {{random}} + {{random2}}<br>= {{random+random2}}
+        {{random}} + {{random2}}<br>= {{random+random2}}<br>
       </div>
     <h2 id="h2">JavaScript2</h2>
       <div id="JavaScript2">
