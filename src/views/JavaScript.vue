@@ -23,7 +23,7 @@
   justify-content: center;
 }
 .random{
-  font-size: 45px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-content: center;
