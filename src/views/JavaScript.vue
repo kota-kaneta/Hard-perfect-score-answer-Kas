@@ -1,7 +1,7 @@
 <template>
   <div id="JavaScript">
     <Header id="top">JavaScript</Header>
-    <h2>#1:セキ</h2>
+    <h2>#1:ランダムワ</h2>
       <div class="random">
         {{random}} + {{random2}}<br>= {{random+random2}}<br>
       </div>
